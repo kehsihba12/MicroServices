@@ -1,0 +1,65 @@
+package my.app.service;
+
+public class Myrepo {
+	
+	
+	private String name;
+	private String gender;
+	
+	
+	
+	public void intial() {
+		// init method 
+		
+		System.out.println("inside the init method");
+	}
+	
+	public void destory() {
+		System.out.println("inside the destory method");
+	}
+	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+		System.out.println("inside the setter  method");
+	}
+
+
+
+	public String getGender() {
+		return gender;
+	}
+
+
+
+	public Myrepo() {
+		super();
+		System.out.println("inside constructor");
+	}
+
+
+
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Myrepo [name=" + name + ", gender=" + gender + "]";
+	
+	}
+	
+	
+	
+}

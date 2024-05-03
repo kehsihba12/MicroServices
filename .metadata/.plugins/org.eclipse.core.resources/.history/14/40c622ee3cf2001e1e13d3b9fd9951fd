@@ -1,0 +1,5 @@
+package com.app.interfce;
+
+public interface IProcess {
+
+}

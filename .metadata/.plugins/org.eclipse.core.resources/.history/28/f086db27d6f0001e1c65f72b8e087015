@@ -1,0 +1,29 @@
+package my.app.service;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import my.app.config.Myconfig;
+
+public class Test {
+	
+	
+	public static void main1(String[] args) {
+		ApplicationContext ac = new  AnnotationConfigApplicationContext(Myconfig.class);
+		Object ob  = ac.getBean("repo1");
+		System.out.println(ob);
+		
+		
+	}
+
+	
+	public static void main(String[] args) {
+		
+		ClassPathXmlApplicationContext ac = new  ClassPathXmlApplicationContext("app.xml");
+		Object ob  = ac.getBean("repo");
+		System.out.println(ob);
+		ac.close(); 
+		
+	}
+}

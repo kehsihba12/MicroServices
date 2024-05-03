@@ -1,0 +1,17 @@
+package com.app.abhi;
+
+import javax.xml.crypto.Data;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SpringBean {
+	
+	
+	
+	public void Schedule() {
+		System.out.println("hello first " + new Data());
+	}
+	
+
+}

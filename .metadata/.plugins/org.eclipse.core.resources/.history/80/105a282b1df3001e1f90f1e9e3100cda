@@ -1,0 +1,18 @@
+package com.app.abhi;
+
+import java.util.Date;
+
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SpringBean {
+	
+	
+	@Scheduled(fixedDelay = 2000)
+	public void Schedule() {
+		System.out.println("hello first " + new Date());
+	}
+	
+
+}

@@ -1,0 +1,18 @@
+package my.app.test;
+
+import java.io.ObjectInputFilter.Config;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext ac = new AnnotationConfigApplicationContext(MyConfig.class);
+		
+		Object bean = ac.getBean("repository");
+		System.out.println(bean);
+		
+	}
+}

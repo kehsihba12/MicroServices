@@ -1,0 +1,13 @@
+package com.app.impl1;
+
+import com.app.interfce.IProcess;
+
+public class ProcessImpl implements IProcess {
+
+	@Override
+	public void getProcessCode() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

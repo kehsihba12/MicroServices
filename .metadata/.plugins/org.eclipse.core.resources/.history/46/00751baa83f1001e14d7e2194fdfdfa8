@@ -1,0 +1,24 @@
+package com.app;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.app.*;
+@Configuration
+@ComponentScan("com.app")
+public class MyConfig {
+	
+	@Bean
+	public MyRepository repo2() {
+		MyRepository m1 = new MyRepository();
+		return m1;
+	}
+	
+	@Bean
+	public MyRepository repo1() {
+		MyRepository m1 = new MyRepository();
+		return m1;
+	}
+
+}

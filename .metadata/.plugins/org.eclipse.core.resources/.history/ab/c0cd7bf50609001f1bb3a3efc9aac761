@@ -1,0 +1,10 @@
+package com.abhi;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+@org.springframework.cloud.openfeign.FeignClient(name = "MicroServices_Greet-api")
+public interface FeignClient {
+	
+  @GetMapping("/greet")
+  public String invokeGreetApi();
+}

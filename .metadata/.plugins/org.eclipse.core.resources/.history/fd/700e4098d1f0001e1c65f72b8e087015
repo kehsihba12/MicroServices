@@ -1,0 +1,25 @@
+package my.app.repository;
+
+import java.security.Provider.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("repo")
+public class Repository {
+	
+	
+	
+	@Autowired(required = false)
+	private Service serv;
+
+	@Override
+	public String toString() {
+		return "Repository [serv=" + serv + "]";
+	}
+	
+	
+	
+	
+
+}

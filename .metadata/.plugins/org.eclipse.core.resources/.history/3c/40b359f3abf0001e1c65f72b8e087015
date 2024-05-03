@@ -1,0 +1,24 @@
+package my.app.test;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class SourceRead {
+	
+	
+	@Value("${my.db.url}")
+	private String url;
+	@Value("${my.db.username}")
+	private String username;
+	@Value("${my.db.pwd}")
+	private String pwd;
+	@Value("${my.db.name}")
+	private String name;
+	
+	
+	@Override
+	public String toString() {
+		return "SourceRead [url=" + url + ", username=" + username + ", pwd=" + pwd + ", name=" + name + "]";
+	}
+	
+	
+}

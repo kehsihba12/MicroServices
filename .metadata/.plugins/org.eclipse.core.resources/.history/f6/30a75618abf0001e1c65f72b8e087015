@@ -1,0 +1,11 @@
+package my.app.test;
+
+public class SourceRead {
+
+	private String url;
+	private String username;
+	private String pwd;
+	private String name;
+	
+	
+}

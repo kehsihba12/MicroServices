@@ -1,0 +1,24 @@
+package com.app.abhi;
+
+import java.util.Date;
+
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SpringBean {
+	
+	
+	@Scheduled(cron = "* * * * * *")
+	public void Schedule() {
+		System.out.println("corn first " + new Date());
+	}
+	
+
+	@Scheduled(fixedDelay = 5000)
+	public void Schedule1() {
+		System.out.println("hello first " + new Date());
+	}
+	
+
+}

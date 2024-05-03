@@ -1,0 +1,28 @@
+package com.app;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.app.*;
+@Configuration
+@ComponentScan("com.app")
+public class MyConfig {
+	
+	@Bean
+	public MyRepository repo2() {
+		MyRepository m1 = new MyRepository();
+		m1.setCode("Abhi");
+		m1.setName("java");
+		return m1;
+	}
+	
+	@Bean
+	public MyRepository repo1() {
+		MyRepository m2 = new MyRepository();
+		m2.setCode("swapnil");
+		m2.setName("java");
+		return m2;
+	}
+
+}

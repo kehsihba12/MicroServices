@@ -1,0 +1,9 @@
+
+<bean id = "con" class = "my,app.OracleCon">
+	<property name = "Domain">
+		<value>"sample"</value>
+	</property>
+	<property name = "Url">
+		<value>"sample.com"</value>
+	</property>
+</bean>

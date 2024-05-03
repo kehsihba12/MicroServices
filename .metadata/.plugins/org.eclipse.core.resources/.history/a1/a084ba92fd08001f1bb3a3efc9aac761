@@ -1,0 +1,5 @@
+package com.abhi.rest;
+
+public class StatusRestController {
+
+}

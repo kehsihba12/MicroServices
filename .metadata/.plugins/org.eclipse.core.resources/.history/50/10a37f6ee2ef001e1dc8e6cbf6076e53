@@ -1,0 +1,28 @@
+package my.app.SpringFirstProject;
+
+public class OracleCon {
+	
+	public OracleCon() {
+		super();
+		
+	}
+	private String Domain;
+	private String Url;
+	@Override
+	public String toString() {
+		return "OracleCon [Domain=" + Domain + ", Url=" + Url + "]";
+	}
+	public String getDomain() {
+		return Domain;
+	}
+	public void setDomain(String domain) {
+		Domain = domain;
+	}
+	public String getUrl() {
+		return Url;
+	}
+	public void setUrl(String url) {
+		Url = url;
+	}
+
+}

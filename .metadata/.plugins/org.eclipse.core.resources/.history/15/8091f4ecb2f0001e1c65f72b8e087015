@@ -1,0 +1,21 @@
+package my.app.test;
+
+import java.nio.channels.AcceptPendingException;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import my.app.config.MyConfigFile;
+
+public class MyTest {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ac = AnnotationConfigApplicationContext(MyConfigFile.class);
+		
+		
+	}
+
+
+
+}

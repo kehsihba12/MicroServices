@@ -1,0 +1,18 @@
+package com.app;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class MyRepository {
+
+	
+	@Value("JAVA")
+	private String Code;
+	@Value("KANNOR")
+	private String name ;
+	@Override
+	public String toString() {
+		return "MyRepository [Code=" + Code + ", name=" + name + "]";
+	}
+	
+	
+}

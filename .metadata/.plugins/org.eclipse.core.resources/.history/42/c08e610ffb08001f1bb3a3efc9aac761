@@ -1,0 +1,6 @@
+spring.application.name=MicroServices_Greet-api
+
+
+server.port=8081
+spring.boot.admin.client.url=http://localhost:8989/
+management.endpoints.web.exposure.include=

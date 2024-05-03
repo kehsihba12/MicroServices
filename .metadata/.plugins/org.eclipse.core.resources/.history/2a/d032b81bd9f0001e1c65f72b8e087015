@@ -1,0 +1,42 @@
+package my.app;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+
+@Component("repo")
+public class Repository implements InitializingBean, DisposableBean  {
+	
+	public void afterPropertiesSet() throws Exception{
+		System.out.println("inside the init");
+	}
+	
+	public void destroy() {
+		System.out.println("inside the destory");
+	}
+	
+	@Value("Abhishek")
+	private String name;
+	
+	@Value("Kannor")
+	private String lastname;
+
+	@Override
+	public String toString() {
+		return "Repository [name=" + name + ", lastname=" + lastname + "]";
+		
+	}
+
+	public Repository() {
+		super();
+		System.out.println("inside the constructor");
+	}
+	
+
+	
+	
+	
+
+}

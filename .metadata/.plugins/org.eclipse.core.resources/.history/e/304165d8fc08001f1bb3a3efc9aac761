@@ -1,0 +1,8 @@
+spring.application.name=MicroServices_Status-api-2
+
+
+spring.boot.admin.client.url=http://localhost:8989/
+
+server.port=9090
+
+management.endpoints.web.exposure.include=

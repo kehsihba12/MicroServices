@@ -1,0 +1,5 @@
+package com.abhi.rest;
+
+public interface FeignClient {
+
+}

@@ -1,0 +1,16 @@
+package my.app.base;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MainClass {
+	
+	
+	@Bean
+	public void FirstFile file() {
+		System.out.println("inside the method");
+	}
+	
+
+}

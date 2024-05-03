@@ -1,0 +1,5 @@
+package my.app.serv;
+
+public class MyService {
+
+}

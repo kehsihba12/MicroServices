@@ -1,0 +1,14 @@
+package com.app.impl1;
+
+import com.app.interfce.IProcess;
+
+public class ProcessImpl implements IProcess {
+
+	
+	public void getProcessCode() {
+		
+		System.out.println("p1");
+
+	}
+
+}

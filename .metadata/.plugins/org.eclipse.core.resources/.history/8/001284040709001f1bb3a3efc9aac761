@@ -1,0 +1,23 @@
+package com.abhi.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.abhi.FeignClient;
+
+@RestController
+public class StatusRestController {
+	
+	@Autowired
+	private FeignClientM feign;
+	
+	@GetMapping("/status")
+	public String getStatus() {
+		
+		
+		String invokeGreetApi = feign.invokeGreetApi();		
+		return  invokeGreetApi + " "  +  "This method Running properly";
+	}
+
+}
